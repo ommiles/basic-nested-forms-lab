@@ -22,6 +22,52 @@ The first data model we're going to be working with today is a recipe with ingre
 
 The models and show routes and associations have been set up for you.
 
+```ruby
+{
+  :recipe => {
+    :name => "Polenta with Roasted Mushrooms and Thyme",
+    :ingredients_attributes => {
+      "0" => {
+        :name => "Polenta",
+        :quantity => "1 case",
+      },
+      "1" => {
+        :name => "Olive Oil",
+        :quantity => "2 tbsp",
+      },
+      "2" => {
+        :name => "Red Wine Vinegar",
+        :quantity => ".5 cup",
+      },
+      "3" => {
+        :name => "Thyme",
+        :quantity => "3 sprigs",
+      },
+      "4" => {
+        :name => "Mushrooms",
+        :quantity => "1 carton",
+      },
+      "5" => {
+        :name => "Garlic",
+        :quantity => "3 cloves",
+      },
+      "6" => {
+        :name => "Milk",
+        :quantity => "1/4 cup",
+      },
+      "7" => {
+        :name => "Unsalted Butter",
+        :quantity => "3 tbsp",
+      },
+      "8" => {
+        :name => "Parmesan",
+        :quantity => "1 cup",
+      },
+    }
+  }
+}
+```
+
 ### Instructions
 
 Build a recipe form that accepts two ingredients! It should automatically create the new `Ingredient` objects.
